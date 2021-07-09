@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="appform.css">-->
+    <title>Application Form</title>
+    <style>      
+  html {
+    height: 100%;  
+  }
+  
+body, footer{
+    background-color:rgb(230, 212, 230) ;
+}
+.classdiv{
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.classfooter{
+    margin: auto;
+    width: 60%;
+}
+h2{
+    width:70%;
+    font-weight: bold;
+    font-style: italic;
+}
+h3{
+    color: darkviolet;
+}
+input[type=reset], input[type=submit]{
+  background-color: darkviolet;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 3px 2px;
+  cursor: pointer;
+}
+p{
+    margin: auto;
+   width: 60%;
+}
+label{
+    font-weight: bolder;
+}
+    </style>
+</head>
+<body>
+    <div class="">
+        <h2 align="center">HIRING FOR WORK FROM HOME</h2>
+    <br>
+    <form>
+        <div class="classdiv">
+        <h3>PERSONAL INFORMATION:</h3>
+        <label>First Name:</label>
+            <input type="text" name="firstname" id="firstname">
+            <br><br>
+        <label>Last Name:</label>
+            <input type="text" name="lastname" id="lastname">
+            <br><br>
+        <label>Gender:</label>
+        <br>
+        <input type="radio" name="gender">Male<br><input type="radio" name="gender">Female<br><input type="radio" name="gender">Other
+<br> <br>
+<label>Graduation year:</label>
+<input type="number" name="year"><br><br>
+<label>College/University name:</label> <br>
+<textarea cols="50" rows="2" value="college"></textarea><br>
+</div>
+<br><br>
+<div class="classdiv">
+<h3>CONTACT INFORMATION</h3>
+<label>Contact number:</label>
+ <input type="text" name="number" size="15">
+ <br> <br>
+ <label>Country:</label>
+ <select id="country" name="country">
+    <option value=""></option>
+    <option value="india">India</option>
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+ <br> <br>
+ <label>Email:</label>
+ <input type="email" name="emailid" size="30">
+ <br> <br>
+ <label>Pincode:</label>
+ <input type="text" name="pincode" size="7">
+ <br> <br>
+</div>
+<br><br>
+<div class="classdiv">
+ <h3>TECHNICAL SKILLS:</h3><br>
+ <input type="checkbox" name="Mathematics" value="Mathematics" />Mathematics<br>
+ <input type="checkbox" name="Statistics" value="Statistics" />Statistics<br>
+ <input type="checkbox" name="Data analysis" value="Data analysis" />Data analysis<br>
+ <input type="checkbox" name="Machine Learning" value="Machine Learning" />Fundamentals of Machine Learning<br>
+ <input type="checkbox" name="Python/R" value="Python/R" />Python/R<br>
+ <input type="checkbox" name="Data science" value="Data science" />Data science<br>
+ <input type="checkbox" name="Deep Learning" value="Deep Learning" />Deep Learning<br>
+ <input type="checkbox" name="Computer vision" value="Computer vision" />Computer vision<br>
+ <input type="checkbox" name="Data structures and algo" value="Data structures and algo" />Data structures and algo<br>
+ <input type="checkbox" name="SQL" value="SQL" />SQL<br>
+ <input type="checkbox" name="Other" value="Other size="20" />Others
+ <input type="text" name="Other_skills"/>
+ <br> <br>
+ <label>Applying for:</label><br>
+ <input type="radio" name="role">Machine Learning Engineer<br><input type="radio" name="role">Data Analyst
+ <br><br>
+</div>
+<br><br>
+<div class="classdiv">
+ <h3>UPDATED RESUME:</h3><br>
+ <input type="file" name="fileToUpload" id="file">
+ <br><br>
+ <label>Github link:</label><br>
+ <input type="url" name="Githublink">
+ <br><br>
+ <label>LinkedIn link:</label><br>
+<input type="url" name="LinkedInlink">
+<br><br><br>
+</div>
+<br><br>
+<p><strong>Privacy Policy:</strong> The information you provided will not be shared. It will be only used to select potential employees.</p>
+<br><br>
+<div class="classfooter">
+<input type="reset" id="reset">
+<input type="submit" id="submit">
+<br><br><br><br>
+</div>
+    </form>
+</div>
+</body>
+</html>
